@@ -1,0 +1,664 @@
+========information flow======
+====enter script:/===
+backup global taint set:[] in the check point 21
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 21
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+====enter script:_init__t_.js===
+backup global taint set:[] in the check point 16177
+label for page _init__t_.js is sp
+update taint set:[{label:sp,url:_init__t_.js}]
+restore global taint set:[] with the check point 16177
+====exit script:_init__t_.js====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 37
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 37
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 57
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 57
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 69
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 69
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 117
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 117
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 121
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 121
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":2}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	2
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:/===
+backup global taint set:[] in the check point 2421
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 2421
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":3}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":1}},"Douban":{"init_show_login":{"sp":1}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	3
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	1
+Douban	init_show_login	sp	1
+====enter script:6306446db32fdaec_t_.js===
+backup global taint set:[] in the check point 12549
+label for page 6306446db32fdaec_t_.js is sp
+update taint set:[{label:sp,url:6306446db32fdaec_t_.js}]
+restore global taint set:[] with the check point 12549
+====exit script:6306446db32fdaec_t_.js====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":11}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":3}},"Douban":{"init_show_login":{"sp":1}},"z":{"tagsug":{"sp":2}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	11
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	3
+Douban	init_show_login	sp	1
+z	tagsug	sp	2
+====enter script:/===
+backup global taint set:[] in the check point 2701
+label for page / is sd
+update taint set:[{label:sd,url:/}]
+restore global taint set:[] with the check point 2701
+====exit script:/====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":11}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1}},"k":{"Do":{"sp":3},"DoubanAdRequest":{"sd":1},"DoubanAdSlots":{"sd":1}},"Douban":{"init_show_login":{"sp":1}},"z":{"tagsug":{"sp":2}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	11
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+k	Do	sp	3
+k	DoubanAdRequest	sd	1
+k	DoubanAdSlots	sd	1
+Douban	init_show_login	sp	1
+z	tagsug	sp	2
+====enter script:jquery.min_t_.js===
+backup global taint set:[] in the check point 72357
+label for page jquery.min_t_.js is sp
+update taint set:[{label:sp,url:jquery.min_t_.js}]
+restore global taint set:[] with the check point 72357
+====exit script:jquery.min_t_.js====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":12}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1},"type":{"sp":1}},"k":{"Do":{"sp":3},"DoubanAdRequest":{"sd":1},"DoubanAdSlots":{"sd":1},"$":{"sp":1},"jQuery":{"sp":1}},"Douban":{"init_show_login":{"sp":1}},"z":{"tagsug":{"sp":2}},"c":{"[object Boolean]":{"sp":1},"[object Number]":{"sp":1},"[object String]":{"sp":1},"[object Function]":{"sp":1},"[object Array]":{"sp":1},"[object Date]":{"sp":1},"[object RegExp]":{"sp":1},"[object Object]":{"sp":1}},"bk":{"webkit":{"sp":1},"version":{"sp":1},"safari":{"sp":1},"blur":{"sp":1},"focus":{"sp":1},"focusin":{"sp":1},"focusout":{"sp":1},"load":{"sp":1},"resize":{"sp":1},"scroll":{"sp":1},"unload":{"sp":1},"click":{"sp":1},"dblclick":{"sp":1},"mousedown":{"sp":1},"mouseup":{"sp":1},"mousemove":{"sp":1},"mouseover":{"sp":1},"mouseout":{"sp":1},"mouseenter":{"sp":1},"mouseleave":{"sp":1},"change":{"sp":1},"select":{"sp":1},"submit":{"sp":1},"keydown":{"sp":1},"keypress":{"sp":1},"keyup":{"sp":1},"error":{"sp":1},"height":{"sp":1},"width":{"sp":1}},"DIV":{"innerHTML":{"sp":6}},"SELECT":{"disabled":{"sp":1}},"bo":{"data":{"sp":1},"removeData":{"sp":1},"queue":{"sp":1},"dequeue":{"sp":1},"delay":{"sp":1},"clearQueue":{"sp":1},"attr":{"sp":1},"removeAttr":{"sp":1},"addClass":{"sp":1},"removeClass":{"sp":1},"toggleClass":{"sp":1},"hasClass":{"sp":1},"val":{"sp":1},"bind":{"sp":1},"one":{"sp":1},"unbind":{"sp":1},"delegate":{"sp":1},"undelegate":{"sp":1},"trigger":{"sp":1},"triggerHandler":{"sp":1},"toggle":{"sp":2},"hover":{"sp":1},"live":{"sp":1},"die":{"sp":1},"blur":{"sp":1},"focus":{"sp":1},"focusin":{"sp":1},"focusout":{"sp":1},"load":{"sp":2},"resize":{"sp":1},"scroll":{"sp":1},"unload":{"sp":1},"click":{"sp":1},"dblclick":{"sp":1},"mousedown":{"sp":1},"mouseup":{"sp":1},"mousemove":{"sp":1},"mouseover":{"sp":1},"mouseout":{"sp":1},"mouseenter":{"sp":1},"mouseleave":{"sp":1},"change":{"sp":1},"select":{"sp":1},"submit":{"sp":1},"keydown":{"sp":1},"keypress":{"sp":1},"keyup":{"sp":1},"error":{"sp":1},"find":{"sp":1},"has":{"sp":1},"not":{"sp":1},"filter":{"sp":1},"is":{"sp":1},"closest":{"sp":1},"index":{"sp":1},"add":{"sp":1},"andSelf":{"sp":1},"parent":{"sp":1},"parents":{"sp":1},"parentsUntil":{"sp":1},"next":{"sp":1},"prev":{"sp":1},"nextAll":{"sp":1},"prevAll":{"sp":1},"nextUntil":{"sp":1},"prevUntil":{"sp":1},"siblings":{"sp":1},"children":{"sp":1},"contents":{"sp":1},"text":{"sp":1},"wrapAll":{"sp":1},"wrapInner":{"sp":1},"wrap":{"sp":1},"unwrap":{"sp":1},"append":{"sp":1},"prepend":{"sp":1},"before":{"sp":1},"after":{"sp":1},"remove":{"sp":1},"empty":{"sp":1},"clone":{"sp":1},"html":{"sp":1},"replaceWith":{"sp":1},"detach":{"sp":1},"domManip":{"sp":1},"appendTo":{"sp":1},"prependTo":{"sp":1},"insertBefore":{"sp":1},"insertAfter":{"sp":1},"replaceAll":{"sp":1},"css":{"sp":1},"serialize":{"sp":1},"serializeArray":{"sp":1},"ajaxStart":{"sp":1},"ajaxStop":{"sp":1},"ajaxComplete":{"sp":1},"ajaxError":{"sp":1},"ajaxSuccess":{"sp":1},"ajaxSend":{"sp":1},"show":{"sp":1},"hide":{"sp":1},"_toggle":{"sp":1},"fadeTo":{"sp":1},"animate":{"sp":1},"stop":{"sp":1},"slideDown":{"sp":1},"slideUp":{"sp":1},"slideToggle":{"sp":1},"fadeIn":{"sp":1},"fadeOut":{"sp":1},"fadeToggle":{"sp":1},"offset":{"sp":1},"position":{"sp":1},"offsetParent":{"sp":1},"scrollLeft":{"sp":1},"scrollTop":{"sp":1},"innerHeight":{"sp":1},"outerHeight":{"sp":1},"height":{"sp":1},"innerWidth":{"sp":1},"outerWidth":{"sp":1},"width":{"sp":1}},"#text":{"className":{"sp":1}},"E":{":":{"sp":1}},"ao":{"optgroup":{"sp":1},"caption":{"sp":1},"colgroup":{"sp":1},"tfoot":{"sp":1},"tbody":{"sp":1},"th":{"sp":1}},"B":{"height":{"sp":3},"marginTop":{"sp":3},"marginBottom":{"sp":3},"paddingTop":{"sp":3},"paddingBottom":{"sp":3}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	12
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+SCRIPT	type	sp	1
+k	Do	sp	3
+k	DoubanAdRequest	sd	1
+k	DoubanAdSlots	sd	1
+k	$	sp	1
+k	jQuery	sp	1
+Douban	init_show_login	sp	1
+z	tagsug	sp	2
+c	[object Boolean]	sp	1
+c	[object Number]	sp	1
+c	[object String]	sp	1
+c	[object Function]	sp	1
+c	[object Array]	sp	1
+c	[object Date]	sp	1
+c	[object RegExp]	sp	1
+c	[object Object]	sp	1
+bk	webkit	sp	1
+bk	version	sp	1
+bk	safari	sp	1
+bk	blur	sp	1
+bk	focus	sp	1
+bk	focusin	sp	1
+bk	focusout	sp	1
+bk	load	sp	1
+bk	resize	sp	1
+bk	scroll	sp	1
+bk	unload	sp	1
+bk	click	sp	1
+bk	dblclick	sp	1
+bk	mousedown	sp	1
+bk	mouseup	sp	1
+bk	mousemove	sp	1
+bk	mouseover	sp	1
+bk	mouseout	sp	1
+bk	mouseenter	sp	1
+bk	mouseleave	sp	1
+bk	change	sp	1
+bk	select	sp	1
+bk	submit	sp	1
+bk	keydown	sp	1
+bk	keypress	sp	1
+bk	keyup	sp	1
+bk	error	sp	1
+bk	height	sp	1
+bk	width	sp	1
+DIV	innerHTML	sp	6
+SELECT	disabled	sp	1
+bo	data	sp	1
+bo	removeData	sp	1
+bo	queue	sp	1
+bo	dequeue	sp	1
+bo	delay	sp	1
+bo	clearQueue	sp	1
+bo	attr	sp	1
+bo	removeAttr	sp	1
+bo	addClass	sp	1
+bo	removeClass	sp	1
+bo	toggleClass	sp	1
+bo	hasClass	sp	1
+bo	val	sp	1
+bo	bind	sp	1
+bo	one	sp	1
+bo	unbind	sp	1
+bo	delegate	sp	1
+bo	undelegate	sp	1
+bo	trigger	sp	1
+bo	triggerHandler	sp	1
+bo	toggle	sp	2
+bo	hover	sp	1
+bo	live	sp	1
+bo	die	sp	1
+bo	blur	sp	1
+bo	focus	sp	1
+bo	focusin	sp	1
+bo	focusout	sp	1
+bo	load	sp	2
+bo	resize	sp	1
+bo	scroll	sp	1
+bo	unload	sp	1
+bo	click	sp	1
+bo	dblclick	sp	1
+bo	mousedown	sp	1
+bo	mouseup	sp	1
+bo	mousemove	sp	1
+bo	mouseover	sp	1
+bo	mouseout	sp	1
+bo	mouseenter	sp	1
+bo	mouseleave	sp	1
+bo	change	sp	1
+bo	select	sp	1
+bo	submit	sp	1
+bo	keydown	sp	1
+bo	keypress	sp	1
+bo	keyup	sp	1
+bo	error	sp	1
+bo	find	sp	1
+bo	has	sp	1
+bo	not	sp	1
+bo	filter	sp	1
+bo	is	sp	1
+bo	closest	sp	1
+bo	index	sp	1
+bo	add	sp	1
+bo	andSelf	sp	1
+bo	parent	sp	1
+bo	parents	sp	1
+bo	parentsUntil	sp	1
+bo	next	sp	1
+bo	prev	sp	1
+bo	nextAll	sp	1
+bo	prevAll	sp	1
+bo	nextUntil	sp	1
+bo	prevUntil	sp	1
+bo	siblings	sp	1
+bo	children	sp	1
+bo	contents	sp	1
+bo	text	sp	1
+bo	wrapAll	sp	1
+bo	wrapInner	sp	1
+bo	wrap	sp	1
+bo	unwrap	sp	1
+bo	append	sp	1
+bo	prepend	sp	1
+bo	before	sp	1
+bo	after	sp	1
+bo	remove	sp	1
+bo	empty	sp	1
+bo	clone	sp	1
+bo	html	sp	1
+bo	replaceWith	sp	1
+bo	detach	sp	1
+bo	domManip	sp	1
+bo	appendTo	sp	1
+bo	prependTo	sp	1
+bo	insertBefore	sp	1
+bo	insertAfter	sp	1
+bo	replaceAll	sp	1
+bo	css	sp	1
+bo	serialize	sp	1
+bo	serializeArray	sp	1
+bo	ajaxStart	sp	1
+bo	ajaxStop	sp	1
+bo	ajaxComplete	sp	1
+bo	ajaxError	sp	1
+bo	ajaxSuccess	sp	1
+bo	ajaxSend	sp	1
+bo	show	sp	1
+bo	hide	sp	1
+bo	_toggle	sp	1
+bo	fadeTo	sp	1
+bo	animate	sp	1
+bo	stop	sp	1
+bo	slideDown	sp	1
+bo	slideUp	sp	1
+bo	slideToggle	sp	1
+bo	fadeIn	sp	1
+bo	fadeOut	sp	1
+bo	fadeToggle	sp	1
+bo	offset	sp	1
+bo	position	sp	1
+bo	offsetParent	sp	1
+bo	scrollLeft	sp	1
+bo	scrollTop	sp	1
+bo	innerHeight	sp	1
+bo	outerHeight	sp	1
+bo	height	sp	1
+bo	innerWidth	sp	1
+bo	outerWidth	sp	1
+bo	width	sp	1
+#text	className	sp	1
+E	:	sp	1
+ao	optgroup	sp	1
+ao	caption	sp	1
+ao	colgroup	sp	1
+ao	tfoot	sp	1
+ao	tbody	sp	1
+ao	th	sp	1
+B	height	sp	3
+B	marginTop	sp	3
+B	marginBottom	sp	3
+B	paddingTop	sp	3
+B	paddingBottom	sp	3
+====enter script:ad_t_.js===
+backup global taint set:[] in the check point 74637
+label for page ad_t_.js is sp
+update taint set:[{label:sp,url:ad_t_.js}]
+restore global taint set:[] with the check point 74637
+====exit script:ad_t_.js====
+==========execution finished=================
+TRC={}
+TWC={"global":{"_head_start":{"sd":1},"EXPAND_SETTING_FORM":{"sd":1},"UPLOAD_AUTH_TOKEN":{"sd":1},"UPLOAD_URL":{"sd":1},"SWFUPLOAD_FILES":{"sd":1},"UPLOAD_LIMIT":{"sd":1}},"h":{"coreLib":{"sp":1}},"u":{"current":{"sp":12}},"s":{"http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js":{"sp":1}},"SCRIPT":{"onreadystatechange":{"sp":1},"onload":{"sp":1},"type":{"sp":1}},"k":{"Do":{"sp":3},"DoubanAdRequest":{"sd":1},"DoubanAdSlots":{"sd":1},"$":{"sp":1},"jQuery":{"sp":1},"DoubanAdGet":{"sp":1},"erebor_concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]":{"sp":1,"sd":1},"erebor_concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]":{"sp":1,"sd":1},"erebor_concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]":{"sp":1,"sd":1}},"Douban":{"init_show_login":{"sp":1}},"z":{"tagsug":{"sp":2}},"c":{"[object Boolean]":{"sp":1},"[object Number]":{"sp":1},"[object String]":{"sp":1},"[object Function]":{"sp":1},"[object Array]":{"sp":1},"[object Date]":{"sp":1},"[object RegExp]":{"sp":1},"[object Object]":{"sp":1}},"bk":{"webkit":{"sp":1},"version":{"sp":1},"safari":{"sp":1},"blur":{"sp":1},"focus":{"sp":1},"focusin":{"sp":1},"focusout":{"sp":1},"load":{"sp":1},"resize":{"sp":1},"scroll":{"sp":1},"unload":{"sp":1},"click":{"sp":1},"dblclick":{"sp":1},"mousedown":{"sp":1},"mouseup":{"sp":1},"mousemove":{"sp":1},"mouseover":{"sp":1},"mouseout":{"sp":1},"mouseenter":{"sp":1},"mouseleave":{"sp":1},"change":{"sp":1},"select":{"sp":1},"submit":{"sp":1},"keydown":{"sp":1},"keypress":{"sp":1},"keyup":{"sp":1},"error":{"sp":1},"height":{"sp":1},"width":{"sp":1}},"DIV":{"innerHTML":{"sp":6}},"SELECT":{"disabled":{"sp":1}},"bo":{"data":{"sp":1},"removeData":{"sp":1},"queue":{"sp":1},"dequeue":{"sp":1},"delay":{"sp":1},"clearQueue":{"sp":1},"attr":{"sp":1},"removeAttr":{"sp":1},"addClass":{"sp":1},"removeClass":{"sp":1},"toggleClass":{"sp":1},"hasClass":{"sp":1},"val":{"sp":1},"bind":{"sp":1},"one":{"sp":1},"unbind":{"sp":1},"delegate":{"sp":1},"undelegate":{"sp":1},"trigger":{"sp":1},"triggerHandler":{"sp":1},"toggle":{"sp":2},"hover":{"sp":1},"live":{"sp":1},"die":{"sp":1},"blur":{"sp":1},"focus":{"sp":1},"focusin":{"sp":1},"focusout":{"sp":1},"load":{"sp":2},"resize":{"sp":1},"scroll":{"sp":1},"unload":{"sp":1},"click":{"sp":1},"dblclick":{"sp":1},"mousedown":{"sp":1},"mouseup":{"sp":1},"mousemove":{"sp":1},"mouseover":{"sp":1},"mouseout":{"sp":1},"mouseenter":{"sp":1},"mouseleave":{"sp":1},"change":{"sp":1},"select":{"sp":1},"submit":{"sp":1},"keydown":{"sp":1},"keypress":{"sp":1},"keyup":{"sp":1},"error":{"sp":1},"find":{"sp":1},"has":{"sp":1},"not":{"sp":1},"filter":{"sp":1},"is":{"sp":1},"closest":{"sp":1},"index":{"sp":1},"add":{"sp":1},"andSelf":{"sp":1},"parent":{"sp":1},"parents":{"sp":1},"parentsUntil":{"sp":1},"next":{"sp":1},"prev":{"sp":1},"nextAll":{"sp":1},"prevAll":{"sp":1},"nextUntil":{"sp":1},"prevUntil":{"sp":1},"siblings":{"sp":1},"children":{"sp":1},"contents":{"sp":1},"text":{"sp":1},"wrapAll":{"sp":1},"wrapInner":{"sp":1},"wrap":{"sp":1},"unwrap":{"sp":1},"append":{"sp":1},"prepend":{"sp":1},"before":{"sp":1},"after":{"sp":1},"remove":{"sp":1},"empty":{"sp":1},"clone":{"sp":1},"html":{"sp":1},"replaceWith":{"sp":1},"detach":{"sp":1},"domManip":{"sp":1},"appendTo":{"sp":1},"prependTo":{"sp":1},"insertBefore":{"sp":1},"insertAfter":{"sp":1},"replaceAll":{"sp":1},"css":{"sp":1},"serialize":{"sp":1},"serializeArray":{"sp":1},"ajaxStart":{"sp":1},"ajaxStop":{"sp":1},"ajaxComplete":{"sp":1},"ajaxError":{"sp":1},"ajaxSuccess":{"sp":1},"ajaxSend":{"sp":1},"show":{"sp":1},"hide":{"sp":1},"_toggle":{"sp":1},"fadeTo":{"sp":1},"animate":{"sp":1},"stop":{"sp":1},"slideDown":{"sp":1},"slideUp":{"sp":1},"slideToggle":{"sp":1},"fadeIn":{"sp":1},"fadeOut":{"sp":1},"fadeToggle":{"sp":1},"offset":{"sp":1},"position":{"sp":1},"offsetParent":{"sp":1},"scrollLeft":{"sp":1},"scrollTop":{"sp":1},"innerHeight":{"sp":1},"outerHeight":{"sp":1},"height":{"sp":1},"innerWidth":{"sp":1},"outerWidth":{"sp":1},"width":{"sp":1}},"#text":{"className":{"sp":1}},"E":{":":{"sp":1}},"ao":{"optgroup":{"sp":1},"caption":{"sp":1},"colgroup":{"sp":1},"tfoot":{"sp":1},"tbody":{"sp":1},"th":{"sp":1}},"B":{"height":{"sp":3},"marginTop":{"sp":3},"marginBottom":{"sp":3},"paddingTop":{"sp":3},"paddingBottom":{"sp":3}},"i":{"get":{"sp":1}},"q":{"0":{"sp":3},"1":{"sp":3},"2":{"sp":3},"3":{"sp":3},"4":{"sp":3},"5":{"sp":3},"6":{"sp":3},"7":{"sp":3},"8":{"sp":3},"9":{"sp":3},"10":{"sp":3},"11":{"sp":3},"12":{"sp":6},"13":{"sp":3},"14":{"sp":3},"15":{"sp":3},"16":{"sp":6},"17":{"sp":3},"18":{"sp":3},"19":{"sp":3},"20":{"sp":3},"21":{"sp":3},"22":{"sp":3},"23":{"sp":3},"24":{"sp":3},"25":{"sp":3},"26":{"sp":3},"27":{"sp":3},"28":{"sp":3},"29":{"sp":3},"30":{"sp":3},"31":{"sp":3}},"t":{"callback":{"sp":3,"sd":3}}}
+object	property	url	read count
+object	property	label	write count
+global	_head_start	sd	1
+global	EXPAND_SETTING_FORM	sd	1
+global	UPLOAD_AUTH_TOKEN	sd	1
+global	UPLOAD_URL	sd	1
+global	SWFUPLOAD_FILES	sd	1
+global	UPLOAD_LIMIT	sd	1
+h	coreLib	sp	1
+u	current	sp	12
+s	http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js	sp	1
+SCRIPT	onreadystatechange	sp	1
+SCRIPT	onload	sp	1
+SCRIPT	type	sp	1
+k	Do	sp	3
+k	DoubanAdRequest	sd	1
+k	DoubanAdSlots	sd	1
+k	$	sp	1
+k	jQuery	sp	1
+k	DoubanAdGet	sp	1
+k	erebor_concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]	sp	1
+k	erebor_concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]	sd	1
+k	erebor_concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]	sp	1
+k	erebor_concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=0,symbolic=[{label:sp,url:ad_t_.js}]	sd	1
+k	erebor_concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]	sp	1
+k	erebor_concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=1,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=2,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=A,symbolic=[{label:sp,url:ad_t_.js}]concrete=B,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=F,symbolic=[{label:sp,url:ad_t_.js}]concrete=5,symbolic=[{label:sp,url:ad_t_.js}]concrete=7,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=4,symbolic=[{label:sp,url:ad_t_.js}]concrete=6,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=9,symbolic=[{label:sp,url:ad_t_.js}]concrete=C,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]concrete=8,symbolic=[{label:sp,url:ad_t_.js}]concrete=E,symbolic=[{label:sp,url:ad_t_.js}]concrete=D,symbolic=[{label:sp,url:ad_t_.js}]concrete=3,symbolic=[{label:sp,url:ad_t_.js}]	sd	1
+Douban	init_show_login	sp	1
+z	tagsug	sp	2
+c	[object Boolean]	sp	1
+c	[object Number]	sp	1
+c	[object String]	sp	1
+c	[object Function]	sp	1
+c	[object Array]	sp	1
+c	[object Date]	sp	1
+c	[object RegExp]	sp	1
+c	[object Object]	sp	1
+bk	webkit	sp	1
+bk	version	sp	1
+bk	safari	sp	1
+bk	blur	sp	1
+bk	focus	sp	1
+bk	focusin	sp	1
+bk	focusout	sp	1
+bk	load	sp	1
+bk	resize	sp	1
+bk	scroll	sp	1
+bk	unload	sp	1
+bk	click	sp	1
+bk	dblclick	sp	1
+bk	mousedown	sp	1
+bk	mouseup	sp	1
+bk	mousemove	sp	1
+bk	mouseover	sp	1
+bk	mouseout	sp	1
+bk	mouseenter	sp	1
+bk	mouseleave	sp	1
+bk	change	sp	1
+bk	select	sp	1
+bk	submit	sp	1
+bk	keydown	sp	1
+bk	keypress	sp	1
+bk	keyup	sp	1
+bk	error	sp	1
+bk	height	sp	1
+bk	width	sp	1
+DIV	innerHTML	sp	6
+SELECT	disabled	sp	1
+bo	data	sp	1
+bo	removeData	sp	1
+bo	queue	sp	1
+bo	dequeue	sp	1
+bo	delay	sp	1
+bo	clearQueue	sp	1
+bo	attr	sp	1
+bo	removeAttr	sp	1
+bo	addClass	sp	1
+bo	removeClass	sp	1
+bo	toggleClass	sp	1
+bo	hasClass	sp	1
+bo	val	sp	1
+bo	bind	sp	1
+bo	one	sp	1
+bo	unbind	sp	1
+bo	delegate	sp	1
+bo	undelegate	sp	1
+bo	trigger	sp	1
+bo	triggerHandler	sp	1
+bo	toggle	sp	2
+bo	hover	sp	1
+bo	live	sp	1
+bo	die	sp	1
+bo	blur	sp	1
+bo	focus	sp	1
+bo	focusin	sp	1
+bo	focusout	sp	1
+bo	load	sp	2
+bo	resize	sp	1
+bo	scroll	sp	1
+bo	unload	sp	1
+bo	click	sp	1
+bo	dblclick	sp	1
+bo	mousedown	sp	1
+bo	mouseup	sp	1
+bo	mousemove	sp	1
+bo	mouseover	sp	1
+bo	mouseout	sp	1
+bo	mouseenter	sp	1
+bo	mouseleave	sp	1
+bo	change	sp	1
+bo	select	sp	1
+bo	submit	sp	1
+bo	keydown	sp	1
+bo	keypress	sp	1
+bo	keyup	sp	1
+bo	error	sp	1
+bo	find	sp	1
+bo	has	sp	1
+bo	not	sp	1
+bo	filter	sp	1
+bo	is	sp	1
+bo	closest	sp	1
+bo	index	sp	1
+bo	add	sp	1
+bo	andSelf	sp	1
+bo	parent	sp	1
+bo	parents	sp	1
+bo	parentsUntil	sp	1
+bo	next	sp	1
+bo	prev	sp	1
+bo	nextAll	sp	1
+bo	prevAll	sp	1
+bo	nextUntil	sp	1
+bo	prevUntil	sp	1
+bo	siblings	sp	1
+bo	children	sp	1
+bo	contents	sp	1
+bo	text	sp	1
+bo	wrapAll	sp	1
+bo	wrapInner	sp	1
+bo	wrap	sp	1
+bo	unwrap	sp	1
+bo	append	sp	1
+bo	prepend	sp	1
+bo	before	sp	1
+bo	after	sp	1
+bo	remove	sp	1
+bo	empty	sp	1
+bo	clone	sp	1
+bo	html	sp	1
+bo	replaceWith	sp	1
+bo	detach	sp	1
+bo	domManip	sp	1
+bo	appendTo	sp	1
+bo	prependTo	sp	1
+bo	insertBefore	sp	1
+bo	insertAfter	sp	1
+bo	replaceAll	sp	1
+bo	css	sp	1
+bo	serialize	sp	1
+bo	serializeArray	sp	1
+bo	ajaxStart	sp	1
+bo	ajaxStop	sp	1
+bo	ajaxComplete	sp	1
+bo	ajaxError	sp	1
+bo	ajaxSuccess	sp	1
+bo	ajaxSend	sp	1
+bo	show	sp	1
+bo	hide	sp	1
+bo	_toggle	sp	1
+bo	fadeTo	sp	1
+bo	animate	sp	1
+bo	stop	sp	1
+bo	slideDown	sp	1
+bo	slideUp	sp	1
+bo	slideToggle	sp	1
+bo	fadeIn	sp	1
+bo	fadeOut	sp	1
+bo	fadeToggle	sp	1
+bo	offset	sp	1
+bo	position	sp	1
+bo	offsetParent	sp	1
+bo	scrollLeft	sp	1
+bo	scrollTop	sp	1
+bo	innerHeight	sp	1
+bo	outerHeight	sp	1
+bo	height	sp	1
+bo	innerWidth	sp	1
+bo	outerWidth	sp	1
+bo	width	sp	1
+#text	className	sp	1
+E	:	sp	1
+ao	optgroup	sp	1
+ao	caption	sp	1
+ao	colgroup	sp	1
+ao	tfoot	sp	1
+ao	tbody	sp	1
+ao	th	sp	1
+B	height	sp	3
+B	marginTop	sp	3
+B	marginBottom	sp	3
+B	paddingTop	sp	3
+B	paddingBottom	sp	3
+i	get	sp	1
+q	0	sp	3
+q	1	sp	3
+q	2	sp	3
+q	3	sp	3
+q	4	sp	3
+q	5	sp	3
+q	6	sp	3
+q	7	sp	3
+q	8	sp	3
+q	9	sp	3
+q	10	sp	3
+q	11	sp	3
+q	12	sp	6
+q	13	sp	3
+q	14	sp	3
+q	15	sp	3
+q	16	sp	6
+q	17	sp	3
+q	18	sp	3
+q	19	sp	3
+q	20	sp	3
+q	21	sp	3
+q	22	sp	3
+q	23	sp	3
+q	24	sp	3
+q	25	sp	3
+q	26	sp	3
+q	27	sp	3
+q	28	sp	3
+q	29	sp	3
+q	30	sp	3
+q	31	sp	3
+t	callback	sp	3
+t	callback	sd	3

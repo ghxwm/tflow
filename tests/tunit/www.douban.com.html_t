@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.douban.com/ -->
+<html lang="zh-CN" class="ua-linux ua-webkit">
+<script src='http://127.0.0.1:8888/util/global.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/esprima.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/escodegen.browser.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/esnstrument.browser.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/gutil.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/jsuri-1.1.1.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/policy.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/TaintEngine.js' type='text/javascript'></script>
+<script src='http://127.0.0.1:8888/util/analysis.js' type='text/javascript'></script>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>豆瓣</title>
+    
+    
+<meta content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。" name="description">
+
+    <link href="./www.douban.com_files/_init_.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./www.douban.com_files/ad.js" async="true"></script>undefined
+    <script src="./www.douban.com_files/_init_.js" data-cfg-corelib="http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js"></script>
+    
+    <style type="text/css"></style>
+    <link rel="stylesheet" href="http://img3.douban.com/misc/mixed_static/2b819f01b27d7129.css">
+    undefined
+
+    <link rel="shortcut icon" href="http://img3.douban.com/favicon.ico" type="image/x-icon">
+<script src="./www.douban.com_files/ga.js" async="true"></script></head>
+
+<body>
+  
+    <script inst  type="text/javascript">p2</script>
+    
+   
+
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+
+<div class="top-nav-info">
+    
+
+    <span class="perf-metric"><!-- _performtips_ --></span>
+    <ul>
+       
+       <li><a id="top-nav-doumail-link" href="http://www.douban.com/doumail/">豆邮<em>(2)</em></a></li>
+       <li class="nav-user-account">
+       <a target="_blank" href="http://www.douban.com/accounts/" class="bn-more"><span>泛泛之辈的帐号</span><span class="arrow"></span></a>
+       <div class="more-items">
+      <table cellpadding="0" cellspacing="0">
+            <tbody><tr><td><a href="http://www.douban.com/mine/">我的豆瓣</a></td></tr>
+            <tr><td><a target="_blank" href="http://www.douban.com/accounts/">我的帐号</a></td></tr>
+            <tr><td><a href="http://www.douban.com/accounts/logout?source=main&ck=lCT9">退出</a></td></tr>
+         </tbody></table>
+       </div>
+
+       </li>
+     </ul>
+</div>
+
+
+    <div class="top-nav-reminder">
+        <a href="http://www.douban.com/notification/" class="lnk-remind">提醒
+        </a>
+    <div id="top-nav-notimenu" class="more-items">
+      <div class="bd">
+          <p>加载中...</p>
+      </div>
+    </div>
+    </div>
+    
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="on">
+            <a href="./www.douban.com_files/www.douban.com.html" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-main&quot;,&quot;uid&quot;:&quot;51491205&quot;}">豆瓣</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://book.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-book&quot;,&quot;uid&quot;:&quot;51491205&quot;}">读书</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://movie.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-movie&quot;,&quot;uid&quot;:&quot;51491205&quot;}">电影</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://music.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-music&quot;,&quot;uid&quot;:&quot;51491205&quot;}">音乐</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/location/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-location&quot;,&quot;uid&quot;:&quot;51491205&quot;}">同城</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://www.douban.com/group/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-group&quot;,&quot;uid&quot;:&quot;51491205&quot;}">小组</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://read.douban.com/?dcs=top-nav&dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-read&quot;,&quot;uid&quot;:&quot;51491205&quot;}">阅读</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://douban.fm/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-fm&quot;,&quot;uid&quot;:&quot;51491205&quot;}">豆瓣FM</a>
+            </li>
+          
+            
+            <li>
+            <a href="http://dongxi.douban.com/?dcs=top-nav&dcm=douban" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-commodity&quot;,&quot;uid&quot;:&quot;51491205&quot;}">东西</a>
+            </li>
+          
+            <li>
+              <a href="http://www.douban.com/#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tbody><tr><td><a href="http://9.douban.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-9&quot;,&quot;uid&quot;:&quot;51491205&quot;}">九点</a></td></tr>
+                    
+                    <tr><td><a href="http://alphatown.com/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-town&quot;,&quot;uid&quot;:&quot;51491205&quot;}">阿尔法城</a></td></tr>
+                    
+                    <tr><td><a href="http://www.douban.com/mobile/" target="_blank" data-moreurl-dict="{&quot;from&quot;:&quot;top-nav-click-mobile&quot;,&quot;uid&quot;:&quot;51491205&quot;}">移动应用</a></td></tr>
+                </tbody></table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+<div id="db-nav-sns" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-search">
+        <form action="http://www.douban.com/search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">搜索你感兴趣的内容和人...</label>
+            <div class="inp">
+              <input type="hidden" name="source" value="suggest">
+              <input id="inp-query" name="q" size="22" title="搜索搜索你感兴趣的内容和人..." maxlength="60" autocomplete="off" value="">
+            </div>
+            <div class="inp-btn"><input type="submit" value="搜索"></div>
+          </fieldset>
+        </form>
+      </div>
+  
+      <div class="nav-logo">
+        <a href="./www.douban.com_files/www.douban.com.html">豆瓣社区</a>
+      </div>
+  
+      <div class="nav-items">
+        <ul>
+          <li><a href="./www.douban.com_files/www.douban.com.html">首页</a></li>
+            <li><a href="http://www.douban.com/mine/">我的豆瓣</a></li>
+          <li><a href="http://www.douban.com/explore/">浏览发现</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <div id="wrapper">
+        
+
+        
+<div id="content">
+    
+
+    <div class="grid-16-8 clearfix">
+        
+        
+        <div class="article">
+               
+    
+        
+
+        
+
+
+
+
+<div class="statuses-setting">
+<div class="hd">
+    <a href="http://www.douban.com/#" class="a_status_setting">首页设置</a>
+</div>
+<div class="bd" style="display:none;">
+  <i class="arrow"></i>
+  <div class="loading">正在加载中...</div>
+</div>
+<p class="setting-tips" style="display:none;">设置成功! 相关内容后继会出现在你的首页上
+</p></div>
+undefined
+
+
+    <div id="statuses">
+    
+
+
+
+
+
+<div id="db-isay" class="mod isay isay-disable  has-commodity">
+	<form name="mbform" method="post" action="./www.douban.com_files/www.douban.com.html"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+    <ul class="isay-links">
+      <li class="isay-main active"><a data-action="main" href="javascript:void(0);">说句话</a></li>
+      <li class="isay-pic"><a data-action="pic" href="javascript:void(0);">发照片</a></li>
+      <li class="isay-share">
+        <a data-action="share" href="javascript:void(0);">推荐网页</a>
+        <a target="_blank" href="http://www.douban.com/service/bookmarklet" class="lnk-share-tools" onclick="moreurl(this, {from:&#39;index_rec&#39;})" style="display:none;">添加网页推荐工具</a>
+      </li>
+        <li class="notes-link"><a href="http://www.douban.com/note/create" title="添加日记">写日记</a></li>
+        <li class="commodity-link">
+            <a data-action="commodity" href="javascript:void(0)" title="发布东西">发布东西</a>
+            <div class="publish-ways">
+            <div class="share"><a target="_blank" href="http://dongxi.douban.com/show/create">发布东西</a></div>
+            <div class="review"><a target="_blank" href="http://dongxi.douban.com/article/create">写图文评论</a></div>
+            <s class="arr"></s>
+            <s class="arr-inner"></s>
+            </div>
+        </li>
+    </ul>
+    <div class="item">
+      <p class="highlighter mention-highlighter"></p>
+      <p class="highlighter error-highlighter"></p>
+      <label id="isay-label" for="isay-cont">分享生活点滴...</label>
+      <textarea data-minheight="70" tabindex="1" id="isay-cont" name="comment" rows="1"></textarea>
+    </div>
+    <div id="isay-act-field" class="isay-act"></div>
+    <div class="btn">
+      <span id="isay-counter"></span>
+      <span class="bn-submit bn-flat"><input id="isay-submit" tabindex="1" type="submit" value="发布"></span>
+    </div>
+  </form>
+  <div class="btn-group">
+    <form charset="utf-8" id="isay-upload" data-action="pic" action="http://www.douban.com/j/upload" enctype="multipart/form-data" method="post"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+    <input id="isay-upload-inp" tabindex="2" autocomplete="off" data-action="pic" name="image" title="可传多张照片" type="file" multiple="">
+    </form>
+    <a href="javascript:void(0);" tabindex="-1" data-action="pic" class="ico ico-pic" title="上传照片">照片</a>
+    <a href="javascript:void(0);" tabindex="2" data-action="topic" class="ico ico-topic" title="添加话题">话题</a>
+  </div>
+</div>
+undefined
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+<div class="stream-items ">
+  
+
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315289277" data-action="0" data-target-type="editor" data-object-kind="1026" data-object-id="58653065">
+<div class="mod" data-status-id="1315289277">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/GodCookery/" onclick="moreurl(this,{from: &#39;nmbp-1315289277&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="豆瓣吃货"><img src="./www.douban.com_files/u46775144-4.jpg" alt="豆瓣吃货"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/GodCookery/" onclick="moreurl(this,{from: &#39;nmbp-1315289277&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="豆瓣吃货" class="lnk-people">豆瓣吃货</a>
+    的相册:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block block-album">
+  <div class="content">
+      
+<div class="album-photos">
+  <a href="http://www.douban.com/photos/album/58653065/" onclick="moreurl(this,{from: &#39;nmb-1315289277&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">
+      <img src="./www.douban.com_files/p1264249897.jpg">
+      <img src="./www.douban.com_files/p1264249873.jpg">
+      <img src="./www.douban.com_files/p1264249819.jpg">
+      <img src="./www.douban.com_files/p1264249796.jpg">
+  </a>
+</div>
+<div class="title">
+  <a href="http://www.douban.com/photos/album/58653065/" onclick="moreurl(this,{from: &#39;nmb-1315289277&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">21种饼的做法(内附步骤）</a>
+</div>
+
+  </div>
+</div>
+
+
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="58653065" data-tkind="1026">喜欢</a>
+
+
+
+
+
+
+
+
+<div class="author-tags-container">
+  <span class="splitter"></span>
+  <span class="author-tags">标签:
+      <a href="http://www.douban.com/photos/album/tags/%E7%BE%8E%E9%A3%9F" target="_blank">美食</a>
+      <a href="http://www.douban.com/photos/album/tags/%E5%B1%85%E5%AE%B6" target="_blank">居家</a>
+      <a href="http://www.douban.com/photos/album/tags/%E5%81%A5%E5%BA%B7" target="_blank">健康</a>
+  </span>
+</div>
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 23:36:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315289277, photo_album.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315269777" data-action="0" data-target-type="editor" data-object-kind="1026" data-object-id="75168983">
+<div class="mod" data-status-id="1315269777">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/su225/" onclick="moreurl(this,{from: &#39;nmbp-1315269777&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="姜汁小和"><img src="./www.douban.com_files/u2121622-509.jpg" alt="姜汁小和"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/su225/" onclick="moreurl(this,{from: &#39;nmbp-1315269777&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="姜汁小和" class="lnk-people">姜汁小和</a>
+    的相册:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block block-album">
+  <div class="content">
+      
+<div class="album-photos">
+  <a href="http://www.douban.com/photos/album/75168983/" onclick="moreurl(this,{from: &#39;nmb-1315269777&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">
+      <img src="./www.douban.com_files/p2166411140.jpg">
+      <img src="./www.douban.com_files/p2166411139.jpg">
+      <img src="./www.douban.com_files/p2166411138.jpg">
+      <img src="./www.douban.com_files/p2166411136.jpg">
+  </a>
+</div>
+<div class="title">
+  <a href="http://www.douban.com/photos/album/75168983/" onclick="moreurl(this,{from: &#39;nmb-1315269777&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">喵星人拯救世界</a>
+</div>
+
+  </div>
+</div>
+
+
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="75168983" data-tkind="1026">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 23:04:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315269777, photo_album.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315263166" data-action="0" data-target-type="editor" data-object-kind="3090" data-object-id="1097881">
+<div class="mod" data-status-id="1315263166">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/26774430/" onclick="moreurl(this,{from: &#39;nmbp-1315263166&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="混合物"><img src="./www.douban.com_files/u26774430-3.jpg" alt="混合物"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/26774430/" onclick="moreurl(this,{from: &#39;nmbp-1315263166&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" class="lnk-people">混合物</a>
+      的东西:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block commodity-block">
+  <div class="pic">
+      <div class="pic-wrap">
+        
+      <a href="http://dongxi.douban.com/show/1097881/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315263166&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="【永远不用墨水】“老不死”钢笔" target="_blank"><img src="./www.douban.com_files/p1908680.jpg"></a>
+  
+        <span class="valign"></span>
+      </div>
+  </div>
+  <div class="content">
+      
+  
+  <div class="title">
+      <a href="http://dongxi.douban.com/show/1097881/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315263166&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" target="_blank">【永远不用墨水】“老不死”钢笔</a>
+  </div>
+  <div class="price">￥115.00 / 办公文具</div>
+  <p>
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 22:54:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315263166, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315255533" data-action="0" data-target-type="editor" data-object-kind="1015" data-object-id="325417809">
+<div class="mod" data-status-id="1315255533">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/45074177/" onclick="moreurl(this,{from: &#39;nmbp-1315255533&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" title="慕容素衣"><img src="./www.douban.com_files/u45074177-2.jpg" alt="慕容素衣"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/45074177/" onclick="moreurl(this,{from: &#39;nmbp-1315255533&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" class="lnk-people">慕容素衣</a>
+    的日记:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+<div class="block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://www.douban.com/note/325417809/" onclick="moreurl(this,{from: &#39;nmb-1315255533&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})">你的心里面，住着一个穷孩子吗</a>
+  </div>
+  <p>昨天和表妹聊天，聊着聊着聊到了小时候，两个走在奔三路上的大龄女青年开始追忆往事。别以为往事都是美好的，一场追忆最后变成了比穷。 我说，小时候家里特别穷，吃不好，穿不好，想买什么东...
+
+  </p></div>
+</div>
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="325417809" data-tkind="1015">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 22:42:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315255533, note.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315247043" data-action="0" data-target-type="subscribed_doulist" data-object-kind="1002" data-object-id="25806463">
+<div class="mod" data-status-id="1315247043">
+  <div class="hd">
+     
+  
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/artchan1943/" onclick="moreurl(this,{from: &#39;nmbp-1315247043&#39;, action: &#39;0&#39;, target_type: &#39;subscribed_doulist&#39;, object_kind: &#39;1002&#39;})" title="陳某"><img src="./www.douban.com_files/u45753049-2.jpg" alt="陳某"></a>
+  </div>
+  <div class="text">
+      <a href="http://www.douban.com/people/artchan1943/" onclick="moreurl(this,{from: &#39;nmbp-1315247043&#39;, action: &#39;0&#39;, target_type: &#39;subscribed_doulist&#39;, object_kind: &#39;1002&#39;})" class="lnk-people">陳某</a>
+      向豆列 
+        <a href="http://movie.douban.com/doulist/1460760/" target="_blank" onclick="moreurl(this,{from: &#39;nmb-1315247043&#39;, action: &#39;0&#39;, target_type: &#39;subscribed_doulist&#39;, object_kind: &#39;1002&#39;})">私人观影-韩国篇</a> 中添加:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block block-subject">
+    <div class="pic">
+        <a href="http://movie.douban.com/subject/25806463/" target="_blank" onclick="moreurl(this,{from: &#39;nmb-1315247043&#39;, action: &#39;0&#39;, target_type: &#39;subscribed_doulist&#39;, object_kind: &#39;1002&#39;})" title="味道" class="media"><img src="./www.douban.com_files/3q9B2A.jpg"></a>
+    </div>
+    <div class="content">
+    <div class="title">
+        <a href="http://movie.douban.com/subject/25806463/" target="_blank" onclick="moreurl(this,{from: &#39;nmb-1315247043&#39;, action: &#39;0&#39;, target_type: &#39;subscribed_doulist&#39;, object_kind: &#39;1002&#39;})">味道</a>
+        <span class="allstar00"></span>
+        <strong class="rating_num"></strong>
+    </div>
+    
+    <p>One man and five women?!
+Chic, innocent, sexy, tough and mysterious, take you...
+    </p><div class="info">
+    <ul>
+            <li><span class="label">导演:</span><span>Kyeong Seok-ho</span>
+            </li><li><span class="label">类型:</span><span>爱情 情色</span>
+    </li></ul>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 22:28:52">昨天，来自你关注的豆列
+        </span> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315247043, subject.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315239852" data-action="0" data-target-type="editor" data-object-kind="1026" data-object-id="124085442">
+<div class="mod" data-status-id="1315239852">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/15792984/" onclick="moreurl(this,{from: &#39;nmbp-1315239852&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="建建"><img src="./www.douban.com_files/user_normal.jpg" alt="建建"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/15792984/" onclick="moreurl(this,{from: &#39;nmbp-1315239852&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="建建" class="lnk-people">建建</a>
+    的相册:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block block-album">
+  <div class="content">
+      
+<div class="album-photos">
+  <a href="http://site.douban.com/106782/widget/photos/15792984/" onclick="moreurl(this,{from: &#39;nmb-1315239852&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">
+      <img src="./www.douban.com_files/p2166640242.jpg">
+      <img src="./www.douban.com_files/p2166640238.jpg">
+      <img src="./www.douban.com_files/p2166640234.jpg">
+      <img src="./www.douban.com_files/p2166640229.jpg">
+  </a>
+</div>
+<div class="title">
+  <a href="http://site.douban.com/106782/widget/photos/15792984/" onclick="moreurl(this,{from: &#39;nmb-1315239852&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">用数字绘画表达中国传统色彩之美</a>
+</div>
+
+  </div>
+</div>
+
+
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="124085442" data-tkind="1026">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 22:18:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315239852, photo_album.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315225996" data-action="1" data-target-type="editor" data-object-kind="3092" data-object-id="1053969">
+<div class="mod" data-status-id="1315225996">
+  <div class="hd">
+     
+    
+    <div class="usr-pic">
+        <a href="http://www.douban.com/people/allenyang7753/" onclick="moreurl(this,{from: &#39;nmbp-1315225996&#39;, action: &#39;1&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3092&#39;})" title="唱唱反调">
+            <img src="./www.douban.com_files/u64608391-13.jpg" alt="唱唱反调">
+        </a>
+    </div>
+    <div class="text">
+        
+        <a href="http://www.douban.com/people/allenyang7753/" onclick="moreurl(this,{from: &#39;nmbp-1315225996&#39;, action: &#39;1&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3092&#39;})" class="lnk-people">唱唱反调</a>
+        写了关于<a target="_blank" href="http://www.douban.com/thing/79/">理财</a>的回答：
+    </div>
+
+  </div>
+  <div class="bd">
+    
+
+<div class="block">
+  <div class="content">
+      
+
+<div class="title">
+    <a target="_blank" href="http://www.douban.com/thing/79/experience/1053969/">刚毕业工资不高的工薪族有什么方式可以理财？</a>
+</div>
+<p>  首先，新人理财必须从狠狠的存钱开始！！想理财必须有坚定的信念，就是在心里拼命的呐喊，我在存钱我要存钱我要在什么时候资产达到一百万！！！信念坚定了，目标明确了，就要有行动计划了！！！我们有时候往往缺乏的就是行动力和执行力！！  但是怎么执行呢？可以坚持以下三步走路线不动摇！  1. 制订收支预算，预算和记帐同时并行......</p>
+
+  </div>
+</div>
+
+
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 21:54:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315225996, experience.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315151962" data-action="0" data-target-type="editor" data-object-kind="1026" data-object-id="73826749">
+<div class="mod" data-status-id="1315151962">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/shuangerrr/" onclick="moreurl(this,{from: &#39;nmbp-1315151962&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="SUMMER"><img src="./www.douban.com_files/u4698308-80.jpg" alt="SUMMER"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/shuangerrr/" onclick="moreurl(this,{from: &#39;nmbp-1315151962&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})" title="SUMMER" class="lnk-people">SUMMER</a>
+    的相册:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block block-album">
+  <div class="content">
+      
+<div class="album-photos">
+  <a href="http://www.douban.com/photos/album/73826749/" onclick="moreurl(this,{from: &#39;nmb-1315151962&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">
+      <img src="./www.douban.com_files/p1765356275.jpg">
+      <img src="./www.douban.com_files/p1766523788.jpg">
+      <img src="./www.douban.com_files/p1633928185.jpg">
+      <img src="./www.douban.com_files/p1633928226.jpg">
+  </a>
+</div>
+<div class="title">
+  <a href="http://www.douban.com/photos/album/73826749/" onclick="moreurl(this,{from: &#39;nmb-1315151962&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1026&#39;})">哈利波特的十年</a>
+</div>
+
+  </div>
+</div>
+
+
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="73826749" data-tkind="1026">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 21:26:05">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315151962, photo_album.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315134460" data-action="1" data-target-type="sns" data-object-kind="1018" data-object-id="541645186">
+<div class="mod" data-status-id="1315134460">
+  <div class="hd">
+     
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315134460&#39;, action: &#39;1&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" title="洛雷壹、"><img src="./www.douban.com_files/u1500698-24.jpg" alt="洛雷壹、"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315134460&#39;, action: &#39;1&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" class="lnk-people">洛雷壹、</a> 说:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+<div class="status-saying">
+
+
+
+<blockquote>
+  <p>所以说啊如果我出个柜什么的 应该也还蛮有竞争力吧w</p>
+</blockquote>
+
+</div>
+
+
+
+
+
+  
+<div class="actions">
+  
+  <span class="created_at" title="2014-01-17 20:54:50"><a href="http://www.douban.com/people/lonoraye/status/1315134460/">昨天</a></span>
+  <a href="http://www.douban.com/people/lonoraye/status/1315134460/" class="btn btn-action-reply" data-action-type="showComments">1回应</a>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315134460/" class="btn btn-key-like  btn-like" data-action-type="like">赞</a>
+
+    <span class="count like-count" data-count="1">(1)</span>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315134460/" class="btn btn-key-reshare btn-reshare" data-action-type="reshare">转播</a>
+
+</div>
+
+  <div class="others">
+    <div class="comments">
+        <div class="comments-items"></div>
+        <form method="post" action="http://www.douban.com/people/lonoraye/status/1315134460/" class="comment-form"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+            <span class="bn-flat"><input type="submit" value="发表回应" data-type="status-comment"></span>
+            <a href="javascript:void(0);" class="add-more-comments">继续回应</a>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315134460, say.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315120136" data-action="0" data-target-type="editor" data-object-kind="1015" data-object-id="326836088">
+<div class="mod" data-status-id="1315120136">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/54518161/" onclick="moreurl(this,{from: &#39;nmbp-1315120136&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" title="海棠"><img src="./www.douban.com_files/u54518161-5.jpg" alt="海棠"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/54518161/" onclick="moreurl(this,{from: &#39;nmbp-1315120136&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" class="lnk-people">海棠</a>
+    的日记:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+<div class="block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://www.douban.com/note/326836088/" onclick="moreurl(this,{from: &#39;nmb-1315120136&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})">中国饺子</a>
+  </div>
+  <p>在法国我归属一个中国四人帮。每年最重大的一次活动，凑一起包饺子。四个中国女人以发疯的劲头，一整天啥也不干就包饺子，芹菜牛肉饺，酸菜猪肉饺，青瓜虾仁饺------包了吃吃了包，每年天黑...
+
+  </p></div>
+</div>
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="326836088" data-tkind="1015">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 20:28:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315120136, note.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315119120" data-action="0" data-target-type="editor" data-object-kind="3091" data-object-id="1003650">
+<div class="mod" data-status-id="1315119120">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/commit/" onclick="moreurl(this,{from: &#39;nmbp-1315119120&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3091&#39;})" title="赵小宝个老东西"><img src="./www.douban.com_files/u3741741-42.jpg" alt="赵小宝个老东西"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/commit/" onclick="moreurl(this,{from: &#39;nmbp-1315119120&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3091&#39;})" class="lnk-people">赵小宝个老东西</a>
+      的图文评论:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block commodity-review-block">
+  <div class="pic">
+      <div class="pic-wrap">
+        
+      <a href="http://dongxi.douban.com/article/1003650/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315119120&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3091&#39;})" title="记一次没刹住车的海淘【内附高清无码大图晒单】" target="_blank"><img src="./www.douban.com_files/p37164.jpg"></a>
+  
+        <span class="valign"></span>
+      </div>
+  </div>
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://dongxi.douban.com/article/1003650/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315119120&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3091&#39;})" target="_blank">记一次没刹住车的海淘【内附高清无码大图晒单】</a>
+  </div>
+  
+  <p>以前总是觉得海淘很遥远， 因为好多环节缺乏掌控感，所以一直没有鼓起勇气。 但渐渐发觉一些喜欢的品牌的国内价格实在太过坑爹， 又恰逢美国黑五大促，走你~ 咨询了几个海淘达人基本了解了海...
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 20:26:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315119120, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315107681" data-action="2" data-target-type="sns" data-object-kind="1018" data-object-id="541644071">
+<div class="mod" data-status-id="1315107681">
+  <div class="hd">
+     
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315107681&#39;, action: &#39;2&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" title="洛雷壹、"><img src="./www.douban.com_files/u1500698-24.jpg" alt="洛雷壹、"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315107681&#39;, action: &#39;2&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" class="lnk-people">洛雷壹、</a> 说:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+<div class="status-saying">
+
+
+    
+      <div class="attachments-saying group-pics">
+              <span class="group-pic">
+                <span class="pic-wrap">
+                <img src="./www.douban.com_files/fdb027ffce8b153.jpg">
+                
+  <a class="view-large" href="http://img3.douban.com/view/status/raw/public/fdb027ffce8b153.jpg" target="_blank" title="查看原图">+</a>
+
+                <i class="valign"></i>
+                </span>
+              </span>
+      </div>
+
+<blockquote>
+  <p>新技能get！给萌妹子的生日礼物（不 其实只是我想玩巧克力而已…</p>
+</blockquote>
+
+</div>
+
+
+
+
+
+  
+<div class="actions">
+  
+  <span class="created_at" title="2014-01-17 20:01:39"><a href="http://www.douban.com/people/lonoraye/status/1315107681/">昨天</a></span>
+  <a href="http://www.douban.com/people/lonoraye/status/1315107681/" class="btn btn-action-reply" data-action-type="showComments">5回应</a>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315107681/" class="btn btn-key-like  btn-like" data-action-type="like">赞</a>
+
+    <span class="count like-count" data-count="2">(2)</span>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315107681/" class="btn btn-key-reshare btn-reshare" data-action-type="reshare">转播</a>
+
+</div>
+
+  <div class="others">
+    <div class="comments">
+        <div class="comments-items"></div>
+        <form method="post" action="http://www.douban.com/people/lonoraye/status/1315107681/" class="comment-form"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+            <span class="bn-flat"><input type="submit" value="发表回应" data-type="status-comment"></span>
+            <a href="javascript:void(0);" class="add-more-comments">继续回应</a>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315107681, say.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315072125" data-action="0" data-target-type="editor" data-object-kind="3090" data-object-id="1098192">
+<div class="mod" data-status-id="1315072125">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/Asfield/" onclick="moreurl(this,{from: &#39;nmbp-1315072125&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="拖拉拖耶夫斯基"><img src="./www.douban.com_files/u45137280-17.jpg" alt="拖拉拖耶夫斯基"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/Asfield/" onclick="moreurl(this,{from: &#39;nmbp-1315072125&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" class="lnk-people">拖拉拖耶夫斯基</a>
+      的东西:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block commodity-block">
+  <div class="pic">
+      <div class="pic-wrap">
+        
+      <a href="http://dongxi.douban.com/show/1098192/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315072125&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="【可自由伸缩的书架】桌上书架" target="_blank"><img src="./www.douban.com_files/p1914487.jpg"></a>
+  
+        <span class="valign"></span>
+      </div>
+  </div>
+  <div class="content">
+      
+  
+  <div class="title">
+      <a href="http://dongxi.douban.com/show/1098192/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1315072125&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" target="_blank">【可自由伸缩的书架】桌上书架</a>
+  </div>
+  <div class="price">￥128.00 / 家居</div>
+  <p>材质看上去比较厚实，最重要的是可以自由伸缩！考验动手能力的时候又到了=_,=
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 18:40:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315072125, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+<div class="status-item" data-sid="1315051392" data-action="1" data-target-type="sns" data-object-kind="1018" data-object-id="541641819">
+<div class="mod" data-status-id="1315051392">
+  <div class="hd">
+     
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315051392&#39;, action: &#39;1&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" title="洛雷壹、"><img src="./www.douban.com_files/u1500698-24.jpg" alt="洛雷壹、"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/lonoraye/" onclick="moreurl(this,{from: &#39;nmbp-1315051392&#39;, action: &#39;1&#39;, target_type: &#39;sns&#39;, object_kind: &#39;1018&#39;})" class="lnk-people">洛雷壹、</a> 说:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+<div class="status-saying">
+
+
+
+<blockquote>
+  <p>一场稳胜的辩论最后成了平局…实在是もったいない。但是又一次暴露出自己的缺点，要走好人路线么又不肯花那个慢言慢语沟通的时间，强势又狠不下心。今天做立论的时候被说“简直就是アナウンサー”，个么我考虑考虑播音主持方向？（笑）</p>
+</blockquote>
+
+</div>
+
+
+
+
+
+  
+<div class="actions">
+  
+  <span class="created_at" title="2014-01-17 17:53:03"><a href="http://www.douban.com/people/lonoraye/status/1315051392/">昨天</a></span>
+  <a href="http://www.douban.com/people/lonoraye/status/1315051392/" class="btn btn-action-reply" data-action-type="showComments">回应</a>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315051392/" class="btn btn-key-like  btn-like" data-action-type="like">赞</a>
+
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/lonoraye/status/1315051392/" class="btn btn-key-reshare btn-reshare" data-action-type="reshare">转播</a>
+
+</div>
+
+  <div class="others">
+    <div class="comments">
+        <div class="comments-items"></div>
+        <form method="post" action="http://www.douban.com/people/lonoraye/status/1315051392/" class="comment-form"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+            <span class="bn-flat"><input type="submit" value="发表回应" data-type="status-comment"></span>
+            <a href="javascript:void(0);" class="add-more-comments">继续回应</a>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315051392, say.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1314837792" data-action="0" data-target-type="rec" data-object-kind="1015" data-object-id="264288981">
+<div class="mod" data-status-id="1314837792">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/guibian/" onclick="moreurl(this,{from: &#39;nmbp-1314837792&#39;, action: &#39;0&#39;, target_type: &#39;rec&#39;, object_kind: &#39;1015&#39;})" title="诡辩"><img src="./www.douban.com_files/u1108605-26.jpg" alt="诡辩"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/guibian/" onclick="moreurl(this,{from: &#39;nmbp-1314837792&#39;, action: &#39;0&#39;, target_type: &#39;rec&#39;, object_kind: &#39;1015&#39;})" class="lnk-people">诡辩</a>
+    推荐日记:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+<div class="block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://www.douban.com/note/264288981/" onclick="moreurl(this,{from: &#39;nmb-1314837792&#39;, action: &#39;0&#39;, target_type: &#39;rec&#39;, object_kind: &#39;1015&#39;})">学术写作利器——LaTeX入门笔记整理（不...</a>
+  </div>
+  <p>LaTeX入门教程（上） 比Word更适合学术写作的编纂语言 Credit：讲座是敝系的几个技术宅办的，作者只负责记录和整理。后面的更新是个人心得。 LaTeX是专为学术写作开发的语言和编纂程序，拥有...
+
+  </p></div>
+</div>
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="264288981" data-tkind="1015">喜欢</a>
+
+
+
+
+
+
+
+
+<div class="author-tags-container">
+  <span class="splitter"></span>
+  <span class="author-tags">标签:
+      <a href="http://www.douban.com/note/tags/%E5%86%99%E4%BD%9C" target="_blank">写作</a>
+      <a href="http://www.douban.com/note/tags/%E5%AD%A6%E6%9C%AF" target="_blank">学术</a>
+      <a href="http://www.douban.com/note/tags/%E6%8E%92%E7%89%88" target="_blank">排版</a>
+      <a href="http://www.douban.com/note/tags/latex" target="_blank">latex</a>
+  </span>
+</div>
+
+</div>
+
+<blockquote>
+  <p>不错的教程</p>
+</blockquote>
+
+
+
+  
+<div class="actions">
+  
+  <span class="created_at" title="2014-01-17 13:32:56"><a href="http://www.douban.com/people/guibian/status/1314837792/">昨天</a></span>
+  <a href="http://www.douban.com/people/guibian/status/1314837792/" class="btn btn-action-reply" data-action-type="showComments">回应</a>
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/guibian/status/1314837792/" class="btn btn-key-like  btn-like" data-action-type="like">赞</a>
+
+
+    &nbsp;&nbsp;<a href="http://www.douban.com/people/guibian/status/1314837792/" class="btn btn-key-reshare btn-reshare" data-action-type="reshare">转播</a>
+
+  <span class="reshared_by">由洛雷壹、转播</span>
+</div>
+
+  <div class="others">
+    <div class="comments">
+        <div class="comments-items"></div>
+        <form method="post" action="http://www.douban.com/people/guibian/status/1314837792/" class="comment-form"><div style="display:none;"><input type="hidden" name="ck" value="lCT9"></div>
+            <input maxlength="280" type="text" name="text" class="comment-text" data-type="status-comment">
+            <span class="bn-flat"><input type="submit" value="发表回应" data-type="status-comment"></span>
+            <a href="javascript:void(0);" class="add-more-comments">继续回应</a>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1314837792, note.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1315002200" data-action="0" data-target-type="editor" data-object-kind="1015" data-object-id="326460195">
+<div class="mod" data-status-id="1315002200">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://site.douban.com/229782/" onclick="moreurl(this,{from: &#39;nmbp-1315002200&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" title="KPOP♥韩剧"><img src="./www.douban.com_files/67108efcda920a3.jpg" alt="KPOP♥韩剧"></a>
+  </div>
+  <div class="text">
+    <a href="http://site.douban.com/229782/" onclick="moreurl(this,{from: &#39;nmbp-1315002200&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})" class="lnk-people">KPOP♥韩剧</a>
+    的日记:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+<div class="block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://site.douban.com/229782/widget/notes/15767553/note/326460195/" onclick="moreurl(this,{from: &#39;nmb-1315002200&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;1015&#39;})">2013年豆瓣7.5分以上韩国电影汇总。</a>
+  </div>
+  <p>1、《7号房的礼物》8.6分 主演: 柳承龙 / 朴信惠 / 郑镇荣 / 金正泰 / 吴达洙 / 朴元尚 / 郑万植 / 葛素媛 上映日期: 2013-01-23 1997年，只有6岁儿童智商的智障男子李龙久（柳成龙 饰）和可...
+
+  </p></div>
+</div>
+
+<div class="attachment">
+
+
+
+
+
+    
+    <a class="fav-add btn-fav" title="标为喜欢？" href="http://www.douban.com/#" data-user_id="51491205" data-tid="326460195" data-tkind="1015">喜欢</a>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 16:28:04">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1315002200, note.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1314999774" data-action="0" data-target-type="editor" data-object-kind="3093" data-object-id="1204826">
+<div class="mod" data-status-id="1314999774">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/sinabow/" onclick="moreurl(this,{from: &#39;nmbp-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="花绘"><img src="./www.douban.com_files/u4742276-46.jpg" alt="花绘"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/sinabow/" onclick="moreurl(this,{from: &#39;nmbp-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" class="lnk-people">花绘</a>
+      的东西豆列:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block commodity-doulist-block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" target="_blank">我就looklook 我buy不起</a>
+  </div>
+  <div class="doulist-photos">
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p3084998.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p5853020.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p7313416.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p5789404.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p7084232.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p1927256.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1204826/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314999774&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="我就looklook 我buy不起" target="_blank"><img src="./www.douban.com_files/p5048751.jpg"></a>
+  </div>
+  <p>72件东西 | 227人关注
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 16:24:05">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1314999774, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1314894743" data-action="0" data-target-type="editor" data-object-kind="3090" data-object-id="1038146">
+<div class="mod" data-status-id="1314894743">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/BeMyLast/" onclick="moreurl(this,{from: &#39;nmbp-1314894743&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="MIZU"><img src="./www.douban.com_files/u63148814-230.jpg" alt="MIZU"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/BeMyLast/" onclick="moreurl(this,{from: &#39;nmbp-1314894743&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" class="lnk-people">MIZU</a>
+      的东西:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block commodity-block">
+  <div class="pic">
+      <div class="pic-wrap">
+        
+      <a href="http://dongxi.douban.com/show/1038146/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314894743&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="【用手摇摇就能拍照】太阳能手摇照相机" target="_blank"><img src="./www.douban.com_files/p269516.jpg"></a>
+  
+        <span class="valign"></span>
+      </div>
+  </div>
+  <div class="content">
+      
+  
+  <div class="title">
+      <a href="http://dongxi.douban.com/show/1038146/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314894743&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" target="_blank">【用手摇摇就能拍照】太阳能手摇照相机</a>
+  </div>
+  <div class="price">￥1,698.00 / 数码产品</div>
+  <p>
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 15:08:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1314894743, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1314854644" data-action="0" data-target-type="editor" data-object-kind="3090" data-object-id="1006383">
+<div class="mod" data-status-id="1314854644">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/anran1992/" onclick="moreurl(this,{from: &#39;nmbp-1314854644&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="布瓜"><img src="./www.douban.com_files/u52296353-215.jpg" alt="布瓜"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/anran1992/" onclick="moreurl(this,{from: &#39;nmbp-1314854644&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" class="lnk-people">布瓜</a>
+      的东西:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+<div class="block commodity-block">
+  <div class="pic">
+      <div class="pic-wrap">
+        
+      <a href="http://dongxi.douban.com/show/1006383/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314854644&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" title="【玩的就是神秘】隐形墨水" target="_blank"><img src="./www.douban.com_files/p25374.jpg"></a>
+  
+        <span class="valign"></span>
+      </div>
+  </div>
+  <div class="content">
+      
+  
+  <div class="title">
+      <a href="http://dongxi.douban.com/show/1006383/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314854644&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3090&#39;})" target="_blank">【玩的就是神秘】隐形墨水</a>
+  </div>
+  <div class="price">￥99.00 / 办公文具</div>
+  <p>隐形墨水，感觉好棒o(*≧▽≦)ツ 
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 14:02:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1314854644, commodity.html -->
+
+
+
+
+
+      
+  
+      
+      
+
+
+
+
+    
+
+
+
+
+
+
+<div class="status-item" data-sid="1314810522" data-action="0" data-target-type="editor" data-object-kind="3093" data-object-id="1131900">
+<div class="mod" data-status-id="1314810522">
+  <div class="hd">
+     
+
+  <div class="usr-pic">
+    <a href="http://www.douban.com/people/lemonadeyan/" onclick="moreurl(this,{from: &#39;nmbp-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="Lemonade+盐"><img src="./www.douban.com_files/u2672946-59.jpg" alt="Lemonade+盐"></a>
+  </div>
+  <div class="text">
+    <a href="http://www.douban.com/people/lemonadeyan/" onclick="moreurl(this,{from: &#39;nmbp-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" class="lnk-people">Lemonade+盐</a>
+      的东西豆列:
+  </div>
+
+  </div>
+  <div class="bd">
+    
+
+
+
+
+<div class="block commodity-doulist-block">
+  <div class="content">
+      
+  <div class="title">
+      <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" target="_blank">「好日子都是自己苦心經營出來的」</a>
+  </div>
+  <div class="doulist-photos">
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p429053.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p7446279.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p518380.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p7295443.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p7411266.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p23308.jpg"></a>
+  
+  <a href="http://dongxi.douban.com/doulist/1131900/?r=9&c=1_1" onclick="moreurl(this,{from: &#39;nmb-1314810522&#39;, action: &#39;0&#39;, target_type: &#39;editor&#39;, object_kind: &#39;3093&#39;})" title="「好日子都是自己苦心經營出來的」" target="_blank"><img src="./www.douban.com_files/p6187952.jpg"></a>
+  </div>
+  <p>82件东西 | 503人关注
+
+  </p></div>
+</div>
+
+
+
+
+    <div class="actions">
+        
+        <span class="created_at" title="2014-01-17 12:44:03">
+            
+            昨天<span class="ghost">，来自 <a href="http://www.douban.com/interest/1/1/">热门精选</a></span>
+        </span>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- 1314810522, commodity.html -->
+
+
+
+
+
+      
+</div>
+
+
+
+        
+
+    
+        <div class="paginator">
+        <span class="prev">
+            &lt;前页
+        </span>
+        
+        
+
+                <span class="thispage" data-total-page="9223372036854775807">1</span>
+                
+            <a href="http://www.douban.com/?p=2">2</a>
+        
+                
+            <a href="http://www.douban.com/?p=3">3</a>
+        
+                
+            <a href="http://www.douban.com/?p=4">4</a>
+        
+                
+            <a href="http://www.douban.com/?p=5">5</a>
+        
+                
+            <a href="http://www.douban.com/?p=6">6</a>
+        
+                
+            <a href="http://www.douban.com/?p=7">7</a>
+        
+                
+            <a href="http://www.douban.com/?p=8">8</a>
+        
+                
+            <a href="http://www.douban.com/?p=9">9</a>
+        
+            <span class="break">...</span>
+        <span class="next">
+            <link rel="next" href="http://www.douban.com/?p=2">
+            <a href="http://www.douban.com/?p=2">后页&gt;</a>
+        </span>
+
+        </div>
+
+
+    </div>
+
+        </div>
+        <div class="aside">
+                
+
+
+
+
+
+
+
+
+
+<div class="notify-mod">
+    <h2>试试更多有趣的内容:</h2>
+    <ul>
+        <li>
+            <a target="_blank" href="http://forms.douban.com/forms/doubanfilmawards_4th_nominees/">第4届豆瓣电影鑫像奖提名中</a>
+        </li>
+        <li>
+            <a href="http://dongxi.douban.com/meizhuang/?dcs=home-sidebar&dcm=douban" target="_blank">【肌肤大作战】见招拆招！</a>
+        </li>
+        <br>
+        <li>
+            <a class="music-player-try" target="_blank" href="http://brand.douban.com/abl/">2013阿比鹿音乐奖获奖名单公布</a>
+        </li>
+    
+    <li>
+        <a href="http://www.douban.com/thing/">值得做的事情</a>
+    </li>
+    </ul>
+</div>
+
+<div id="dale_homepage_login_top_right"></div>
+
+        
+
+
+
+
+
+
+
+<div id="friend" class="mod">
+
+    <h2>
+        我的关注
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                <a href="http://www.douban.com/contacts/list" target="_self">成员4</a>&nbsp;·&nbsp;<a href="http://www.douban.com/people/51491205/contact_site" target="_self">小站0</a>
+                ) </span>
+    </h2>
+
+<div class="list">
+<ul>
+<li><a href="http://www.douban.com/people/lonoraye/"><img src="./www.douban.com_files/u1500698-24.jpg" class="show-title" title="洛雷壹、"></a>
+</li><li><a href="http://www.douban.com/people/XINXIN-Cielo/"><img src="./www.douban.com_files/u1991764-429.jpg" class="show-title" title="XINXIN存放柜"></a>
+</li><li><a href="http://www.douban.com/people/xds2000/"><img src="./www.douban.com_files/u1065629-10.jpg" class="show-title" title="肖"></a>
+</li><li><a href="http://www.douban.com/people/yes.it_is_you/"><img src="./www.douban.com_files/u2069087-210.jpg" class="show-title" title="Yes张嘉乐，三月是春光明媚的"></a>
+</li></ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="fp-sites" class="mod">
+    <p><a href="http://site.douban.com/new_site/">&gt;&nbsp;申请创建小站</a></p>
+</div>
+
+
+
+
+
+
+
+<div class="mod" id="events">
+    
+    <h2>
+        正在发生
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+            <span class="pl">&nbsp;(
+                
+                    <a href="http://www.douban.com/online/" target="_self">换一个</a>
+                ) </span>
+    </h2>
+
+    <ul id="event-list"></ul>
+    <p><a href="http://www.douban.com/online/">&gt;&nbsp;更多线上活动</a></p>
+</div>
+<div id="dale_homepage_online_activity_promo"></div>
+
+
+
+
+<div class="mod">
+
+    <h2>
+        关注
+            &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+    </h2>
+
+<p><a href="http://www.douban.com/contacts/find">&gt; 查找你认识的人</a>，没准他们也在豆瓣上</p>
+</div>
+
+
+
+
+
+
+<div class="mobile-app-entrance block5 app-main">
+
+    <a id="" class="entrance-link first-link" href="http://www.douban.com/mobile/">
+        <span class="app-icon icon-main"></span>
+        <span class="main-title">豆瓣系列应用</span>
+        <span class="sub-title">点击下载</span>
+    </a>
+</div>
+
+<div id="dale_homepage_login_bottom_middle_right"></div>
+<div id="dale_homepage_login_bottom_right"></div>
+
+        </div>
+        <div class="extra">
+            
+        </div>
+    </div>
+</div>
+
+        
+<div id="footer">
+    
+
+<span id="icp" class="fleft gray-link">
+    © 2005－2014 douban.com, all rights reserved
+</span>
+
+<span class="fright">
+    <a href="http://www.douban.com/about">关于豆瓣</a>
+    · <a href="http://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="http://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="http://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="http://www.douban.com/help/">帮助中心</a>
+    · <a href="http://developers.douban.com/" target="_blank">开发者</a>
+    · <a href="http://www.douban.com/mobile/">移动应用</a>
+    · <a href="http://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+
+</div>
+
+    </div>
+    <script inst  type="text/javascript">p2</script><script inst  type="text/javascript">p2</script><script type="text/javascript" src="./www.douban.com_files/c2ab5d69aa0429.js"></script><script inst  type="text/javascript">p2</script><script type="text/javascript" src="./www.douban.com_files/54d53611abb86a1f.js"></script>
+    
+
+
+<!-- douban ad begin -->
+
+
+
+
+
+    
+<script inst  type="text/javascript">p2</script>
+
+
+
+
+
+
+
+
+
+
+<!-- douban ad end -->
+
+    
+    
+<script inst  type="text/javascript">p2</script>
+
+
+
+
+
+
+
+    <!-- nain6-->
+
+  undefined
+
+undefined
+
+
+
+</body></html>

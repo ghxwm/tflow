@@ -1,0 +1,23 @@
+{
+    "name":"jalangi",
+    "version":"0.1.0",
+    "description":"dynamic analysis framework for JavaScript",
+    "dependencies":{
+        "cover":"*",
+        "websocket":"*",
+        "source-map":"*",
+        "esprima":"*",
+        "estraverse":"*",
+        "escodegen":"*",
+        "execSync":"*",
+        "amdefine":"*"
+    },
+    "scripts": {
+      "test": "python scripts/runalltests.py"
+    },
+    "license":"Apache",
+    "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/SRA-SiliconValley/jalangi.git"
+    }
+}

@@ -1,0 +1,40 @@
+gutil.js is included gutil.js:1
+====enter script:8a78291c76c02b69868a113adaf9abc3.instant.min_t_.js=== TaintEngine.js:735
+====exit script:8a78291c76c02b69868a113adaf9abc3.instant.min_t_.js==== TaintEngine.js:748
+==========execution finished================= TaintEngine.js:704
+TRC={} TaintEngine.js:705
+TWC={"window":{"stretchLazyImageHolders":{"sp":1},"instant":{"sp":1},"Modernizr":{"sp":1}},"global":{"i":{"sp":2},"j":{"sp":2},"k":{"sp":2},"l":{"sp":1},"m":{"sp":1},"n":{"sp":3},"o":{"sp":1},"p":{"sp":1},"q":{"sp":1},"r":{"sp":1},"s":{"sp":1},"t":{"sp":1},"u":{"sp":1},"h":{"sp":1},"g":{"sp":2},"f":{"sp":2},"c":{"sp":1}},"q":{"touch":{"sp":1}},"j":{"id":{"sp":1},"touch":{"sp":1},"addTest":{"sp":1},"_version":{"sp":1},"_prefixes":{"sp":1},"testStyles":{"sp":1}},"n":{"innerHTML":{"sp":1}},"o":{"cssText":{"sp":1}},"l":{"className":{"sp":1}}} TaintEngine.js:706
+object	property	url	read count TaintEngine.js:709
+
+object	property	label	write count TaintEngine.js:720
+window	stretchLazyImageHolders	sp	1 TaintEngine.js:727
+window	instant	sp	1 TaintEngine.js:727
+window	Modernizr	sp	1 TaintEngine.js:727
+global	i	sp	2 TaintEngine.js:727
+global	j	sp	2 TaintEngine.js:727
+global	k	sp	2 TaintEngine.js:727
+global	l	sp	1 TaintEngine.js:727
+global	m	sp	1 TaintEngine.js:727
+global	n	sp	3 TaintEngine.js:727
+global	o	sp	1 TaintEngine.js:727
+global	p	sp	1 TaintEngine.js:727
+global	q	sp	1 TaintEngine.js:727
+global	r	sp	1 TaintEngine.js:727
+global	s	sp	1 TaintEngine.js:727
+global	t	sp	1 TaintEngine.js:727
+global	u	sp	1 TaintEngine.js:727
+global	h	sp	1 TaintEngine.js:727
+global	g	sp	2 TaintEngine.js:727
+global	f	sp	2 TaintEngine.js:727
+global	c	sp	1 TaintEngine.js:727
+q	touch	sp	1 TaintEngine.js:727
+j	id	sp	1 TaintEngine.js:727
+j	touch	sp	1 TaintEngine.js:727
+j	addTest	sp	1 TaintEngine.js:727
+j	_version	sp	1 TaintEngine.js:727
+j	_prefixes	sp	1 TaintEngine.js:727
+j	testStyles	sp	1 TaintEngine.js:727
+n	innerHTML	sp	1 TaintEngine.js:727
+o	cssText	sp	1 TaintEngine.js:727
+l	className	sp	1 TaintEngine.js:727
+

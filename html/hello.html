@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>hello.html</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<script src='a.js' type="text/javascript"></script>
+		<script src='b.js' type="text/javascript"></script>
+
+		<script src='c.js' type="text/javascript"></script>
+
+		<script type="text/javascript">
+			//function call
+			var log=console.log;
+			function f1(a,b){
+				console.log(JSON.stringify(arguments));
+				return a+b;
+			}
+			f1(1,2);console.log(123);			
+			f1.call(this,1,2);
+			f1.apply(this,[1,2]);
+/*
+			$(function(){
+				//alert('load jquery success!');	
+				//alert($('#div1').html());		
+			});
+			test( "hello test", function() {
+			  ok( 1 == "1", "Passed!" );
+			});
+*/
+			var a = 1;b=2;
+			var c = a&&b;
+
+			var r = "x8086".replace(/[0-9]/g,function(m){return 'a'+m})
+			var j = [1,2,3].join("t");
+			console.log('r='+r);
+			console.log("j="+j);
+		</script>
+<!--
+		<script src='jquery.js' type="text/javascript"></script>
+		<script src="/util/qunit.js"></script>
+		<script src="/util/ga.js"></script>
+-->
+<script type='text/javascript'>
+	(function(){
+	var a = 1,b;
+	a.p=2;
+	b=3;
+})()
+</script>
+
+<script type="text/javascript">
+(function () {
+    if (Error.captureStackTrace && Object.defineProperty) {
+
+        var global = window;
+
+        Object.defineProperty(global, '__STACK__', {
+            get: function () {
+                var old = Error.prepareStackTrace;
+                Error.prepareStackTrace = function (error, stack) {
+                    return stack;
+                };
+
+                var err = new Error();
+                Error.captureStackTrace(err, arguments.callee);
+                Error.prepareStackTrace = old;
+
+                return err.stack;
+            }
+        });
+
+        Object.defineProperty(global, '__LINE__', {
+            get: function () {
+                return __STACK__[1].getLineNumber();
+            }
+        });
+
+        Object.defineProperty(global, '__FILE__', {
+            get: function () {
+                return __STACK__[1].getFileName();
+            }
+        });
+    }
+})();
+
+var test = function () {
+    //console.log(__LINE__,__FILE__);
+	try{
+	throw Error('test function error');
+	}catch(e){console.log(e.stack);}
+};
+
+test();
+</script>
+	</head>
+	<body>
+		hello html
+<div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+		<div id="div1">div1</div>
+	</body>
+</html>
